@@ -70,7 +70,7 @@ busybox echo -e "\e[00;41m == Applying QC 3.0 Charger Configuration == \e[00;37;
 elif [ "$option" == "2" ]; then
    clear
    echo " "
-busybox echo -e "\e[00;41m == Applying 5V/A Charger Configuration == \e[00;37;40m"
+busybox echo -e "\e[00;41m == Applying 5V/2A Charger Configuration == \e[00;37;40m"
    echo " "
    echo "- Disable QuickCharge 3.0"
    echo "0" > /sys/class/power_supply/battery/allow_hvdcp3;
