@@ -59,17 +59,6 @@ $BB mount -t ext4 -o remount,rw /system
    clear
    echo "- Applying Quick Charge Kernel MOD | upto 2400mA & 3000mA"
    echo " "
-   FC="/sys/kernel/fast_charge/force_fast_charge"
-   QC="/sys/class/power_supply/battery/allow_hvdcp3"
-   if [ -e "$QC" ] || [ -e "$FC" ]; then
-       busybox echo -e "\e[00;44m Fast Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Fast Charge Toggle
-       echo "1" > /sys/kernel/fast_charge/force_fast_charge;
-       busybox echo -e "\e[00;44m Quick Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Quick Charge Toggle
-       echo "1" > /sys/class/power_supply/battery/allow_hvdcp3;
    #
    # dwc3 | overriding default configuration
    if [ -e /sys/module/dwc3/parameters/enable_dwc3_u1u2 ]; then
@@ -440,27 +429,11 @@ $BB mount -t ext4 -o remount,rw /system
    fi
    echo " "
    echo "- Quick Charge Kernel MOD Applied | upto 2400mA & 3000mA"
-   else
-      busybox echo -e "\e[00;41m Fast Charge and Quick Charge toggle not found!!! \e[00;37;40m"
-	  busybox echo -e "\e[00;41m Exit now !!! \e[00;37;40m"
-   echo "- Quick Charge Kernel MOD Not Applied!!!"
-   fi
 
    elif [ $option -eq 2 ]; then
    clear
    echo "- Applying Quick Charge Kernel MOD | upto 2000mA"
    echo " "
-   FC="/sys/kernel/fast_charge/force_fast_charge"
-   QC="/sys/class/power_supply/battery/allow_hvdcp3"
-   if [ -e "$QC" ] || [ -e "$FC" ]; then
-       busybox echo -e "\e[00;44m Fast Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Fast Charge Toggle
-       echo "1" > /sys/kernel/fast_charge/force_fast_charge;
-       busybox echo -e "\e[00;44m Quick Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Quick Charge Toggle
-       echo "1" > /sys/class/power_supply/battery/allow_hvdcp3;
    #
    # dwc3 | overriding default configuration
    if [ -e /sys/module/dwc3/parameters/enable_dwc3_u1u2 ]; then
@@ -831,27 +804,11 @@ $BB mount -t ext4 -o remount,rw /system
    fi
    echo " "
    echo "- Quick Charge Kernel MOD Applied | upto 2000mA"
-   else
-      busybox echo -e "\e[00;41m Fast Charge and Quick Charge toggle not found!!! \e[00;37;40m"
-	  busybox echo -e "\e[00;41m Exit now !!! \e[00;37;40m"
-   echo "- Quick Charge Kernel MOD Not Applied!!!"
-   fi
    
    elif [ $option -eq 3 ]; then
    clear
    echo "- Applying Quick Charge Kernel MOD | upto 1800mA"
    echo " "
-   FC="/sys/kernel/fast_charge/force_fast_charge"
-   QC="/sys/class/power_supply/battery/allow_hvdcp3"
-   if [ -e "$QC" ] || [ -e "$FC" ]; then
-       busybox echo -e "\e[00;44m Fast Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Fast Charge Toggle
-       echo "1" > /sys/kernel/fast_charge/force_fast_charge;
-       busybox echo -e "\e[00;44m Quick Charge Toggle found... \e[00;37;40m"
-	   echo "Applying CVC Parameters..."
-	   # Quick Charge Toggle
-       echo "1" > /sys/class/power_supply/battery/allow_hvdcp3;
    #
    # dwc3 | overriding default configuration
    if [ -e /sys/module/dwc3/parameters/enable_dwc3_u1u2 ]; then
@@ -1222,11 +1179,6 @@ $BB mount -t ext4 -o remount,rw /system
    fi
    echo " "
    echo "- Quick Charge Kernel MOD Applied | upto 1800mA"
-   else
-      busybox echo -e "\e[00;41m Fast Charge and Quick Charge toggle not found!!! \e[00;37;40m"
-	  busybox echo -e "\e[00;41m Exit now !!! \e[00;37;40m"
-   echo "- Quick Charge Kernel MOD Not Applied!!!"
-   fi
    
    #unmount
    elif [ $option -eq 4 ]; then

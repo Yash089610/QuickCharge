@@ -61,7 +61,7 @@ $BB mount -t ext4 -o remount,rw /system
    
    elif [ $option -eq 3 ]; then
    clear
-   sh /system/xbin/charging_controller.sh
+   sh /system/xbin/ch_type.sh
 
    elif [ $option -eq 4 ]; then
    clear

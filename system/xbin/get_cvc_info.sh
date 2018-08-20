@@ -55,7 +55,7 @@ $BB mount -t ext4 -o remount,rw /system
    echo "Build             : v1.0"
    echo "Status            : Stable"
    echo "Build Date        : 18-August-2018 08:17:05 PM"
-   echo "Build v2 Features : - Enables Fast Charging."
+   echo "Build Features    : - Enables Fast Charging."
    echo "                    - Extreme Battery Life."
    echo "                    - Enable QC 2.0|3.0."
    echo "                    - 4 Different Modes 2400mA | 3000mA | 2000mA | 1800mA."
@@ -65,5 +65,6 @@ $BB mount -t ext4 -o remount,rw /system
    echo "                    - Maximum Voltage 4.4V."
    echo "                    - High amps(mA)and Low Voltage when battery Charge in between 1% - 85% during charging."
    echo "                    - Low amps(mA) and High Voltage when battery charge in between 85% - 100% during charging."
+   echo "                    - Allow selecting Charger Type."
    echo "Re-run CVC        : Type "run.sh" again..."
    fi
