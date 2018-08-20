@@ -2,7 +2,8 @@
 ## Description
 [CVC]ChargingVoltageController is a set of commands written in bash script to improve Charging Speed by tuning Revolt Kernel Quick Charging parameters. Revolt Kernel supports Quick Charge functionality. This kernel mod helps you in charging your device faster. You will get good results with Wall Charger only.
 ## Changelog
-* Initial Build v1.0
+* Build v1.0
+   - Initial build
 ## Requirements
 - Latest Revolt Kernel
 - Latest Magisk Manager
