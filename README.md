@@ -29,8 +29,7 @@ How to activate :
 
 * [Github](https://github.com/TheHitMan7/QuickCharge)
 
-* [Latest Revolt QuickChargeMod](http://www.mediafire.com/file/q2acngacf5xpo2g/QCM_R_CVC_Magisk-Module.zip/file)
-
+* [Latest Revolt QuickChargeMod](https://www.mediafire.com/folder/fcsrz8i8z4a3k/Magisk-Module)
 ## Quick Charger Module Information
 * |=============> Module
 * |
