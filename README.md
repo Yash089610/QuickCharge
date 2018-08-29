@@ -6,7 +6,7 @@
   - Initial build
 * Build v2.0
   - Allow define charger type before applying parameters
-  - Some fixes
+  - General fixes
 ## Requirements
 - Latest Revolt Kernel
 - Latest Magisk Manager
